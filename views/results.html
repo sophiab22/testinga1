@@ -1,0 +1,45 @@
+<!-- <body ng-controller="CourseListCtrl"> -->
+
+<div class="jumbotron">
+<section class="res-space">
+	<h2>Results</h2>
+
+		<article class="degree">
+			<p>
+				<strong>Degree</strong>
+				<p ng-repeat="degree in degreeItems track by $index">
+					{{degree.message}}
+				</p>
+			</p>
+		</article>
+
+		<article class="iat">
+			<p>
+				<strong>IAT Courses Taken</strong>
+				<ul class="res-ulcourse">
+					<li ng-repeat="course in courses track by $index">
+						{{course.name}}	
+					</li>
+				</ul>
+			</p>
+		</article>
+
+		<article class="breadth">
+			<p><strong>Breadth Credit Total</strong></p>
+		</article>
+
+</section>
+</div> <!-- end jumbotron -->
+
+
+<!-- Footer -->
+
+  <div class="footer">
+    <ul class="nav">
+      <li ><a class="tab" ng-href="#/degree">Degree</a></li>
+      <li><a class="tab" ng-href="#/iat">IAT</a></li>
+      <li><a class="tab" ng-href="#/breadth">Breadth</a></li>
+    </ul>
+  </div>
+</div>
+

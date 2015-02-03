@@ -1,0 +1,24 @@
+
+<div class="jumbotron">
+	<section class="cent-tabs">
+	  <h2>Select your degree:</h2> 
+	  <br>
+
+	  <p ng-repeat="degree in degreeItems">
+	    <a class="btn btn-sm btn-primary app-qb" ng-click="buttonAction($event, degree, degreeSelected)">
+	    	{{degree.message}}
+	    </a>
+	  </p>
+	</section>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <ul class="nav">
+    <li ><a class="tab active" ng-href="#/degree">Degree</a></li>
+    <li><a class="tab" ng-href="#/iat">IAT</a></li>
+    <li><a class="tab" ng-href="#/breadth">Breadth</a></li>
+  </ul>
+</div>
+
+

@@ -1,0 +1,67 @@
+[
+	{
+		"name": "IAT 320",
+		"concentration": "| Media",
+		"snippet": "Body Interface"
+	},
+	
+	{
+		"name": "IAT 443",
+		"concentration": "| Media",
+		"snippet": "Interactive Video"
+	},
+
+	{
+		"name": "IAT 351",
+		"concentration": "| Interactive Systems",
+		"snippet": "Internet Computing Technologies"
+	},
+	
+	{
+		"name": "IAT 455",
+		"concentration": "| Interactive Systems",
+		"snippet": "Computational Media"
+	},
+
+	{
+		"name": "IAT 334",
+		"concentration": "| Design",
+		"snippet": "Interface Design"
+	},
+	{
+		"name": "IAT 336",
+		"concentration": "| Design",
+		"snippet": "Materials in Design"
+	},
+
+	{
+		"name": "IAT 381",
+		"snippet": "Special Topics (Science)"
+	},
+
+	{
+		"name": "IAT 102",
+		"snippet": "Graphic Design"
+	},
+	
+
+	{
+		"name": "IAT 167",
+		"snippet": "Digital Games"
+	},
+
+	{
+		"name": "IAT 233",
+		"snippet": "Spatial Design"
+	},
+	{
+		"name": "IAT 235",
+		"snippet": "Information Design"
+	},
+
+	{
+		"name": "IAT 309W",
+		"snippet": "Writing for Design"
+	}
+
+]

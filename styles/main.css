@@ -1,0 +1,210 @@
+/* Custom page header */
+.header{
+  background-color: #C0392B; 
+  border-bottom: 1px solid #e5e5e5;
+  padding: 1em;
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0.5em;
+  color: #fff;
+}
+
+h3 {
+  margin: 0em;
+}
+
+.header-btn {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 0.35em;
+  color: #fff;
+  padding: 0.35em;
+}
+
+.nav-spacing {
+  padding: 0em 0.45em 0em 0em;
+}
+
+.tab {
+  background-color: #C0392B;
+  color: #fff;
+  line-height: 3em;
+  padding: 0em 2em;
+  border: 0;
+}
+
+
+.footer {
+  background-color: #C0392B; 
+  color: #777;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 48px;
+  }
+
+.breadth-p{
+  padding-top: 1em;
+  padding-bottom: 0.19em;
+  line-height: 2.35em !important;
+}
+
+ul.course-btn {
+    list-style: none;
+    text-align: left;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+li.iatbtn {
+    border-bottom: 1px solid #a7a7a7;
+    padding-top: 0.1em;
+}
+
+.active {
+  background-color: #eee;
+  color: #696969;
+}
+
+select, input {
+  padding: 0.2em;
+  width: 100%;
+  background-color: #fff;
+  color: #888;
+  border: none;
+  outline: none;
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+}
+
+.jumbotron .btn {
+  padding: 1em;
+}
+
+article{
+  width: 100%;
+  margin: 0;
+  display: inline-block;
+  padding: 0% 0% 0% 5%;
+}
+
+
+article.degree {
+  background-color: #D2D2D2;
+}
+
+article.iat {
+  background-color: #ddd;
+}
+article.breadth {
+  background-color: #D2D2D2;
+}
+
+.res-ulcourse {
+  list-style-type: none;
+  font-size: 16px !important;
+  line-height: 1.5em;
+  text-align: left !important;
+  padding: 0em;
+}
+
+.app-qb-active, .app-qb-active:hover {
+  background-color: #dcdbdb;
+  color: #797979;
+}
+
+.app-qb {
+  transition: all 0.4s linear;
+}
+
+/*------------------------------------------------*/
+/* Responsive: Portrait tablets and up */
+/*@media screen and (min-width: 768px) {*/
+  /* Remove the padding we set earlier */
+ /* .header,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }*/
+  
+  /* Remove the bottom border on the jumbotron for visual effect */
+ /* .jumbotron {
+    border-bottom: 0;
+  }
+}*/
+
+@media screen and (max-height: 568px) {
+  section.cent {
+  padding: 4% 0% 41% 0% !important; 
+  }
+
+  section.cent-tabs {
+    padding: 44.3% 0% 27.4% 0% !important;
+  }
+
+  .footer-only {
+  background-color: #C0392B; 
+  padding: 8.1%
+  }
+
+}
+
+
+@media screen and (max-height: 640px) {
+  section.cent {
+    padding: 17% 0% 49.5% 0%;
+  }
+
+  section.cent-tabs {
+    padding: 31% 0% 53% 0%;
+  }
+
+  .footer-only {
+     background-color: #C0392B; 
+    padding: 8.1%
+  }
+}
+
+/* ------------------------------- 
+Reference: http://brennaobrien.com/blog/2014/05/style-input-type-range-in-every-browser.html
+*/
+
+/* Breadth Sliders */
+input[type=range]{
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 4px;
+    background: #696969;
+    border-radius: 2em;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #C0392B;
+    margin-top: -4px;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+/*input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #eee;
+}*/

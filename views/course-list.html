@@ -1,0 +1,43 @@
+<div class="jumbotron">
+<div class="row">
+	<div class="col-md-2">
+		<h2>Select IAT Courses</h2><br>
+
+		<input ng-model="query" placeholder="Search"><br><br>
+		<select ng-model="orderProp">
+			<option value="name">Course Number</option>
+			<option value="concentration">Concentration</option>
+		</select>
+	</div>
+
+	<div>
+		<ul class="courses course-btn">
+			<li class="iatbtn app-qb" ng-repeat="course in courses | filter:query | orderBy:orderProp" ng-click="buttonAction($event, course, iatSelected)">
+				<div class="col-md-2">
+					<p class="ng-binding">
+						<strong>{{course.name}}</strong><br>
+						{{course.snippet}} 
+						{{course.concentration}}
+					</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+</div>
+</div> <!-- end jumbotron -->
+
+
+<!-- Footer -->
+  <div class="footer">
+ 
+    <ul class="nav">
+      <li ><a class="tab" ng-href="#/degree">Degree</a></li>
+      <li><a class="tab active" ng-href="#/iat">IAT</a></li>
+      <li><a class="tab" ng-href="#/breadth">Breadth</a></li>
+    </ul>
+
+  </div>
+</div>
+
+
