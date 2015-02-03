@@ -1,4 +1,7 @@
-/* Custom page header */
+body {
+  background-color: #eee;
+}
+
 .header{
   background-color: #C0392B; 
   border-bottom: 1px solid #e5e5e5;
@@ -33,19 +36,19 @@ h3 {
   background-color: #C0392B;
   color: #fff;
   line-height: 3em;
-  padding: 0em 2em;
+  padding: 0em 1em 0em 1em;
   border: 0;
 }
 
-
 .footer {
-  background-color: #C0392B; 
-  color: #777;
-  position: absolute;
-  z-index: 2;
-  width: 100%;
-  height: 48px;
-  }
+     background-color: #C0392B;
+    position:fixed; 
+    z-index:2;
+    bottom:0; left:0;
+    width:100%;
+    height:48px;
+    padding:0;
+}
 
 .breadth-p{
   padding-top: 1em;
@@ -54,11 +57,58 @@ h3 {
 }
 
 ul.course-btn {
-    list-style: none;
-    text-align: left;
-    margin: 0.5em;
-    padding: 0.5em;
+  list-style: none;
+  padding: 0em;
+   margin-top: 3em;
+   border: 1px solid #ddd;
+   background: #ffffff;
+   background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
+   background: -webkit-linear-gradient(top, #ffffff, #ffffff);
+   background: -moz-linear-gradient(top, #ffffff, #ffffff);
+   background: -ms-linear-gradient(top, #ffffff, #ffffff);
+   background: -o-linear-gradient(top, #ffffff, #ffffff);
+   background-image: -ms-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+   /*padding: 2px 4px;*/
+   -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   border-radius: 6px;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   text-shadow: #ffffff 0 1px 0;
+   color: #000000;
+   font-size: 11px;
+   font-family: helvetica, serif;
+   text-decoration: none;
+   vertical-align: middle;
 }
+
+.course-btn:hover {
+   /*border: 1px solid #000000;*/
+   text-shadow: #ffffff 0 1px 0;
+   background: #ffffff;
+   background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
+   background: -webkit-linear-gradient(top, #ffffff, #ffffff);
+   background: -moz-linear-gradient(top, #ffffff, #ffffff);
+   background: -ms-linear-gradient(top, #ffffff, #ffffff);
+   background: -o-linear-gradient(top, #ffffff, #ffffff);
+   background-image: -ms-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+   color: #000000;
+   }
+
+.course-btn:active {
+   text-shadow: #ffffff 0 1px 0;
+   /*border: 1px solid #000000;*/
+   background: #ffffff;
+   background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
+   background: -webkit-linear-gradient(top, #ffffff, #ffffff);
+   background: -moz-linear-gradient(top, #ffffff, #ffffff);
+   background: -ms-linear-gradient(top, #ffffff, #ffffff);
+   background: -o-linear-gradient(top, #ffffff, #ffffff);
+   background-image: -ms-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+   color: #000000;
+   }
+
 
 li.iatbtn {
     border-bottom: 1px solid #a7a7a7;
@@ -71,7 +121,7 @@ li.iatbtn {
 }
 
 select, input {
-  padding: 0.2em;
+  padding: 0.5em;
   width: 100%;
   background-color: #fff;
   color: #888;
@@ -129,51 +179,21 @@ article.breadth {
 
 /*------------------------------------------------*/
 /* Responsive: Portrait tablets and up */
-/*@media screen and (min-width: 768px) {*/
-  /* Remove the padding we set earlier */
- /* .header,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }*/
-  
-  /* Remove the bottom border on the jumbotron for visual effect */
- /* .jumbotron {
-    border-bottom: 0;
-  }
-}*/
 
-@media screen and (max-height: 568px) {
+@media screen and (min-height: 568px) and (max-height: 640px) {
   section.cent {
-  padding: 4% 0% 41% 0% !important; 
+  padding: 1% 0% 14% 0% !important;
   }
 
-  section.cent-tabs {
-    padding: 44.3% 0% 27.4% 0% !important;
+  section.cent-deg {
+    padding: 39% 0% 10% 0% !important;
   }
 
-  .footer-only {
-  background-color: #C0392B; 
-  padding: 8.1%
+  section.cent-main {
+    padding: 20% 0% 10% 0% !important;
   }
-
 }
 
-
-@media screen and (max-height: 640px) {
-  section.cent {
-    padding: 17% 0% 49.5% 0%;
-  }
-
-  section.cent-tabs {
-    padding: 31% 0% 53% 0%;
-  }
-
-  .footer-only {
-     background-color: #C0392B; 
-    padding: 8.1%
-  }
-}
 
 /* ------------------------------- 
 Reference: http://brennaobrien.com/blog/2014/05/style-input-type-range-in-every-browser.html
