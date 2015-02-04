@@ -5,34 +5,37 @@
 <section class="cent">
   <h2>Breadth Courses</h2>
   <p>For each category, slide to the amount of credits you have taken.</p>
-  <br>
 
     <!-- B-Hum Slider -->
   	<p class="breadth-p lead">
-		<input type="range" min="0" max="6" value="0" class="slideStyle" onchange="rangevalue1.value=value"/>
-		<strong>B-Hum:</strong>
+  		<strong>B-Hum:</strong>
 		<output id="rangevalue1" ng-model="num1">0</output> credits.
+
+		<input type="range" min="0" max="6" value="0" class="slideStyle" onchange="rangevalue1.value=value"/>
+
 	</p>
 
 	<!-- B-Sci Slider -->
 	<p class="breadth-p  lead">
-		<input type="range" min="0" max="6" value="0" class="slideStyle" onchange="rangevalue2.value=value"/>
 		<strong>B-Sci:</strong>
 		<output id="rangevalue2" ng-model="num2">0</output> credits.
+		<input type="range" min="0" max="6" value="0" class="slideStyle" onchange="rangevalue2.value=value"/>
+
 	</p>
 
 	<!-- B-Soc Slider -->
 	<p class="breadth-p  lead">
-		<input type="range" min="0" max="6" value="0" class="slideStyle" onchange="rangevalue3.value=value"/>
 		<strong>B-Soc:</strong>
 		<output id="rangevalue3" ng-model="num3">0</output> credits.		
+		<input type="range" min="0" max="6" value="0" class="slideStyle" onchange="rangevalue3.value=value"/>
 	</p>
 
 	<!-- Undesignated Slider -->
 	<p class="breadth-p  lead">
-		<input type="range" min="0" max="6" value="0" class="slideStyle" onchange="rangevalue4.value=value"/>
 		<strong>Undesignated:</strong>
 		<output id="rangevalue4" ng-model="num4">0</output> credits.
+		<input type="range" min="0" max="6" value="0" class="slideStyle" onchange="rangevalue4.value=value"/>
+
 		
 	</p>
 	
