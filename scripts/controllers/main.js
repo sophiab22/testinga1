@@ -1,26 +1,12 @@
+// ---- MAIN.JS ----//
+
 'use strict';
 
-/**
- * @ngdoc function
- * @name myappApp.controller:MainCtrl
- * @description
- * # MainCtrl
- * Controller of the myappApp
- */
+APP.controller('MainCtrl', function ($scope) {
 
- APP.controller('MainCtrl', function ($scope) {
-  // $scope.startbtn = [
-  //     {message:'Start'},
-  //   ];
-
+	// Change color when user clicks the button.
     $scope.buttonAction = function($event, btnstart) {
-      //detects if a button has been pressed
-      console.log($event.currentTarget);
-
-      // Turns the color
-      $event.currentTarget.classList.add('app-qb-active')
-
-      setTimeout(function() {
-        });
-      }    
-  });
+      console.log($event.currentTarget);                   // Detects if a button has been pressed
+      $event.currentTarget.classList.add('app-qb-active')  // Changes the button's color.
+    }
+});

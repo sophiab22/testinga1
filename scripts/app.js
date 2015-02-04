@@ -1,13 +1,8 @@
+// ---- APP.JS ---- // 
+// Main module for this application.
+
 'use strict';
 
-/**
- * @ngdoc overview
- * @name myappApp
- * @description
- * # myappApp
- *
- * Main module of the application.
- */
 var APP = angular.module('myappApp', [
     'ngAnimate',
     'ngMessages',
@@ -18,33 +13,44 @@ var APP = angular.module('myappApp', [
 
   .config(function ($routeProvider) {
     $routeProvider
+
+      // Main View
       .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+
+      // IAT Course List View
       .when('/iat', {
         templateUrl: 'views/course-list.html',
         controller: 'CourseListCtrl'
       })
+
+      // Degree View
       .when('/degree', {
         templateUrl: 'views/degree.html',
         controller: 'DegreeCtrl'
       })
+
+      // Breadth View
       .when('/breadth', {
         templateUrl: 'views/breadth.html',
         controller: 'BreadthCtrl'
       })
+
+      // Results View
       .when('/results', {
         templateUrl: 'views/results.html',
         controller: 'ResultsCtrl'
       })
 
+      // Go back to Main View
       .otherwise({
         redirectTo: '/'
       });
   });
 
-  //APP logic
+  // ---- APP LOGIC ---- //
 
   APP.results = [];
 

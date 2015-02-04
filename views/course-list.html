@@ -1,29 +1,35 @@
+<!--COURSE-LIST.HTML --> 
+
+
 <div class="jumbotron">
-<div class="row">
-	<section class="cent">
-	<div class="col-md-2">
-		<h2>Select IAT Courses</h2><br>
+	<div class="row">
+		<section class="cent">
+			<div class="col-md-2">
+				<h2>Select IAT Courses</h2><br>
 
-		<input ng-model="query" placeholder="Search"><br><br>
-		<select ng-model="orderProp">
-			<option value="name">Course Number</option>
-			<option value="concentration">Concentration</option>
-		</select>
-	</div>
+				<!-- User can filter the coruses. Search & Select feature  -->
+				<input ng-model="query" placeholder="Search"><br><br>
+				<select ng-model="orderProp">
+					<option value="name">Course Number</option>
+					<option value="concentration">Concentration</option>
+				</select>
+			</div>
 
-	<div>
-		<ul class="courses course-btn">
-			<li class="iatbtn app-qb" ng-repeat="course in courses | filter:query | orderBy:orderProp" ng-click="buttonAction($event, course, iatSelected)">
-				<div class="col-md-2">
-					<p class="ng-binding">
-						<strong>{{course.name}}</strong><br>
-						{{course.snippet}} 
-						{{course.concentration}}
-					</p>
-				</div>
-			</li>
-		</ul>
+			<!-- Display courses -->
+			<div>
+				<ul class="courses course-btn">
+					<li class="iatbtn app-qb" ng-repeat="course in courses | filter:query | orderBy:orderProp" 
+						ng-click="buttonAction($event, course, iatSelected)">
+						<div class="col-md-2">
+							<p class="ng-binding">
+								<strong>{{course.name}}</strong><br>
+								{{course.snippet}} 
+								{{course.concentration}}
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
 	</div>
-	</section>
 </div>
-</div> <!-- end jumbotron -->

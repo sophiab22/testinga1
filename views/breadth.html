@@ -1,47 +1,46 @@
-<!-- <div ng-app="slider">
- -->
+<!--BREADTH.HTML --> 
+
+
 <div class="jumbotron">
 <section class="cent">
   <h2>Breadth Courses</h2>
   <p>For each category, slide to the amount of credits you have taken.</p>
   <br>
 
+    <!-- B-Hum Slider -->
   	<p class="breadth-p lead">
-  		<!--B-Hum Slider-->
-		<input type = "range" min="0" max="6" value="0" onchange="rangevalue1.value=value"/>
+		<input type="range" min="0" max="6" value="0" class="slideStyle" onchange="rangevalue1.value=value"/>
 		<strong>B-Hum:</strong>
-		<output id="rangevalue1" ng-model="num1">0</output>
+		<output id="rangevalue1" ng-model="num1">0</output> credits.
 	</p>
 
+	<!-- B-Sci Slider -->
 	<p class="breadth-p  lead">
-		<!--B-Sci Slider-->
-		<input type = "range" min="0" max="6" value="0" onchange="rangevalue2.value=value"/>
+		<input type="range" min="0" max="6" value="0" class="slideStyle" onchange="rangevalue2.value=value"/>
 		<strong>B-Sci:</strong>
-		<output id="rangevalue2" ng-model="num2">0</output>
+		<output id="rangevalue2" ng-model="num2">0</output> credits.
 	</p>
 
+	<!-- B-Soc Slider -->
 	<p class="breadth-p  lead">
-		<!--B-Soc Slider-->
-		<input type = "range" min="0" max="6" value="0" onchange="rangevalue3.value=value"/>
+		<input type="range" min="0" max="6" value="0" class="slideStyle" onchange="rangevalue3.value=value"/>
 		<strong>B-Soc:</strong>
-		<output id="rangevalue3" ng-model="num3">0</output>		
+		<output id="rangevalue3" ng-model="num3">0</output> credits.		
 	</p>
 
+	<!-- Undesignated Slider -->
 	<p class="breadth-p  lead">
-		<!--Undesignated Slider-->
-		<input type = "range" min="0" max="6" value="0" onchange="rangevalue4.value=value"/>
+		<input type="range" min="0" max="6" value="0" class="slideStyle" onchange="rangevalue4.value=value"/>
 		<strong>Undesignated:</strong>
-		<output id="rangevalue4" ng-model="num4">0</output>
+		<output id="rangevalue4" ng-model="num4">0</output> credits.
 		
 	</p>
 	
+	<!-- Calculate Results -->
 	<p>
 		<input type="text" value="{{result}}" disabled /> 
 		<input type="button" ng-Click="total(num1, num2, num3, num4)" value="CALCULATE TOTAL CREDITS">
 	</p>
 	</section>
 
-
- 
 </div>
-<!-- </div> -->
