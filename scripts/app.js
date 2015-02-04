@@ -13,7 +13,7 @@ var APP = angular.module('myappApp', [
     'ngMessages',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',   
     ])
 
   .config(function ($routeProvider) {
@@ -51,3 +51,5 @@ var APP = angular.module('myappApp', [
   APP.coursesSelected = [];
 
   APP.degreeSelected = [];
+
+  APP.breadthValue = [];

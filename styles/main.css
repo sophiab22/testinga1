@@ -1,5 +1,6 @@
 body {
   background-color: #eee;
+  font-family: "century gothic", helvetica, serif !important;
 }
 
 .header{
@@ -225,6 +226,6 @@ input[type=range]:focus {
     outline: none;
 }
 
-/*input[type=range]:focus::-webkit-slider-runnable-track {
+input[type=range]:focus::-webkit-slider-runnable-track {
     background: #eee;
-}*/
+}

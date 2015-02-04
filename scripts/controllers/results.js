@@ -1,12 +1,13 @@
 'use strict';
 
-/**
-	Results Page
- */
-
+/*
+Results Page
+*/
 
 APP.controller('ResultsCtrl', function ($scope) {
     $scope.degreeItems = APP.degreeSelected;
     $scope.courses = APP.coursesSelected;
+    $scope.result = APP.breadthValue;
+    
   });
 

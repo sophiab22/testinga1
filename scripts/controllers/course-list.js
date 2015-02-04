@@ -14,6 +14,6 @@ APP.controller('CourseListCtrl', ['$scope', '$http',
 	$scope.buttonAction = function($event, course) {
 		console.log($event.currentTarget);
 		APP.coursesSelected.push(this.course);
-    $event.currentTarget.classList.add('app-qb-active')
+    	$event.currentTarget.classList.add('app-qb-active')
 	}
 }]);
