@@ -90,6 +90,11 @@ h3 {
   line-height: 2.35em !important;
 }
 
+.active {
+  background-color: #eee;
+  color: #696969;
+}
+
 /*---------------- Course buttons styles -------------------------*/
 
 ul.course-btn {
@@ -147,6 +152,7 @@ li.iatbtn {
   border-bottom: 1px solid #a7a7a7;
   padding-top: 0.1em;
 }
+
 
 
 /*--------------'Results' Page Styles---------------------------*/
